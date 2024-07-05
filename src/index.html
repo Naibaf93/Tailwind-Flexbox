@@ -7,14 +7,26 @@
     <title>Flexbox con Tailwind</title>
 </head>
 <body>
-    <nav class="bg-violet-600 h-20 px-8 flex text-white justify-between items-center">
-        <h1>Logo.</h1>
+    <nav class="bg-violet-600 h-20 px-8 flex text-white justify-between
+     items-center flex-row">
+        <h1 class="text-3xl font-bold">Logo.</h1>
 
-        <div>
-            <a href="#">Inicio</a>
-            <a href="#">Acerca de</a>
-            <a href="#">Contacto</a>
+        <div class="flex gap-8">
+            <a href="#" class="text-lg ">Inicio</a>
+            <a href="#" class="text-lg ">Acerca de</a>
+            <a href="#" class="text-lg ">Contacto</a>
         </div>
     </nav>
+
+    <h2 class="text-3xl font-bold text-center my-12">Galeria de imágenes</h2>
+
+    <section class="w-[90%] mx-auto flex flex-wrap gap-x-8 gap-y-4">
+        <img src="./assets/1.jpg" alt="" class="w-52 h-52 grow object-cover">
+        <img src="./assets/2.jpg" alt="" class="w-52 h-52 grow object-cover">
+        <img src="./assets/3.jpg" alt="" class="w-52 h-52 grow object-cover">
+        <img src="./assets/4.jpg" alt="" class="w-52 h-52 grow object-cover">
+        <img src="./assets/5.jpg" alt="" class="w-52 h-52 grow object-cover">
+        <img src="./assets/6.jpg" alt="" class="w-52 h-52 grow object-cover">
+    </section>
 </body>
 </html>
